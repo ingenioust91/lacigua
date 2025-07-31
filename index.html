@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Lacigua</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <nav class="w-full h-[7%] flex items-center flex-auto p-[2%] fixed lg:h-[15%]">
+        <div class="w-[10%] h-full flex items-center cursor-pointer">
+            <a class="text-3xl">&#9776;</a>
+        </div>
+
+        <div class="w-[80%] h-full flex items-center lg:justify-center">
+        <img src="/asset/logo-lacigua-black.png" class="h-[75%] w-auto max-w-3xs">
+        </div>
+
+        <div class="h-full w-[30%] flex items-center justify-end gap-[10px] lg:w-[10%]">
+            <a href="#" class="text-sm cursor-pointer"><b>SIGN IN</b></a>
+            <img src="/asset/cart.png" class="h-[50%] w-auto cursor-pointer">
+        </div>    
+    </nav>
+
+    <div></div>
+
+    <section class="flex flex-col w-full h-full">
+        <img src="/asset/mobile-banner.jpg" class="w-full h-[80%] object-cover">
+
+        <div id="subscription" class="h-[15%] grid grid-rows-[1fr 1fr] grid-cols-1 items-center justify-center p-[10%]
+          lg:pt-[2%] lg:pb-[2%] lg:pl-[20%] lg:pr-[20%]">
+            <section>
+                <h1 class="text-center"><b>COME AND JOIN US!</b></h1>
+            </section>
+
+            <form class="flex frex-wrap border-b-[1px]">
+                <input id="cust-email" type="email" placeholder="Subscribe to Our Email Updates" class="text-xs w-full text-center" required>
+                <button class="bg-black text-white w-[30%]">SEND</button>
+            </form>
+        </div>
+
+    </section>
+</body>
+
+<footer class="w-full h-[5%] bottom-0 bg-black flex justify-center items-center fixed">
+    <h4 class="text-white text-center text-xs">
+        © 2019 LACIGUA LTD. All Right Reserved
+    </h4>
+</footer>
+
+</html>
