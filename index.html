@@ -11,12 +11,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <script src="js/script.js" defer></script>
 </head>
 
 <body>
-    <nav class="w-full h-[7%] flex items-center flex-auto p-[2%] fixed lg:h-[15%]">
-        <div class="w-[10%] h-full flex items-center cursor-pointer">
+    <nav class="w-full h-[7%] flex items-center flex-auto p-[2%] fixed lg:h-[15%] z-9999">
+        <div class="w-[10%] h-full flex items-center cursor-pointer" onclick="hamburgeropen()">
             <a class="text-3xl">&#9776;</a>
         </div>
 
@@ -30,7 +32,43 @@
         </div>    
     </nav>
 
-    <div></div>
+    <div id="menubar" class="w-full h-full bg-white fixed flex flex-col justify-start p-[10%] pt-[15%] gap-[10px]
+        lg:flex-row lg:h-[50%] lg:p-[5%] lg:pt-[7%] lg:justify-center">
+        <i id="fa-close" class="fa fa-close text-right cursor-pointer" onclick="hamburgerclose()"></i>
+        
+        <form class="" action="">
+            <button type="submit"><i class="fa fa-search"></i></button>
+            <input type="text" placeholder="Search" name="search" class="border-1 rounded-full w-[90%]">
+        </form>
+
+        <hr>
+        <h2><b>ORDINAIR</b></h2>
+        <ul id="ordinair" class="pl-[5%] lg:pl-0 lg:w-[10%]">
+            <li><a href="#">All Items</a></li>
+            <li><a href="#">Tops</a></li>
+            <li><a href="#">Bottom</a></li>
+            <li><a href="#">Dress</a></li>
+        </ul>
+
+        <hr>
+        <h2><b>APLOMB</b></h2>
+        <ul id="aplomb" class="pl-[5%] lg:pl-0 lg:w-[10%]">
+            <li><a href="#">All Items</a></li>
+            <li><a href="#">Tops</a></li>
+            <li><a href="#">Bottom</a></li>
+            <li><a href="#">Dress</a></li>
+        </ul>
+
+        <hr>
+        <h2><b>DANEEN</b></h2>
+        <ul id="daneen" class="pl-[5%] lg:pl-0 lg:w-[10%]">
+            <li><a href="#">All Items</a></li>
+            <li><a href="#">Tops</a></li>
+            <li><a href="#">Bottom</a></li>
+            <li><a href="#">Dress</a></li>
+        </ul>
+
+    </div>
 
     <section class="flex flex-col w-full h-full">
         <img src="/asset/mobile-banner.jpg" class="w-full h-[80%] object-cover">
