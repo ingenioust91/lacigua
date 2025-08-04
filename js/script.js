@@ -25,3 +25,7 @@ function hamburgerclose() {
     {document.getElementById("menubar").style.transform = "translateY(-100%)"}
     else {document.getElementById("menubar").style.transform = "translateX(-100%)";}
 }
+
+function dropdownsort () {
+    document.getElementById("sort-list").style.visibility ="visible";
+}

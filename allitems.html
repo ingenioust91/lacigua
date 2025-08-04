@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <nav class="w-full h-[7%] flex items-center flex-auto p-[2%] fixed lg:h-[15%] z-9999">
+    <nav class="w-full h-[7%] flex items-center flex-auto p-[2%] fixed lg:h-[15%] z-9999 fixed bg-white">
         <div class="w-[10%] h-full flex items-center cursor-pointer" onclick="hamburgeropen()">
             <a class="text-3xl">&#9776;</a>
         </div>
@@ -71,11 +71,30 @@
     </div>
 
     <main>
-        <div class="flex pt-[7%] flex-col items-center justify-center gap-[5%]">
+        <div class="flex w-full h-full pt-[20%] lg:pt-[7%] flex-col items-center justify-center gap-[5%]">
             <img src="/asset/logo-ordinair-gray.png" class="w-[15%]">
             
-            <h1>NEW ARRIVAL</h1>
+            <h1 class="text-2xl"><b>NEW ARRIVAL</b></h1>
 
+            <!-- sort and filters -->
+            <div class="w-full p-[2%] flex justify-between">
+                <section class="w-[50%] flex justify-start gap-[5%]">
+                    <h3>Sort by</h3>
+                    <button onclick="dropdownsort()" class="cursor-pointer border-b-[1px]">Relevance &#129123</button>  
+                        <div id="sort-list" class="invisible bg-white absolute left-[16%] lg:left-[6%]">
+                            <a class="block" href="#">Relevance</a>
+                            <a class="block" href="#">Price Low To High</a>
+                            <a class="block" href="#">Price High To Low</a>
+                            <a class="block" href="#">Alphabetical</a>
+                        </div>
+                </section>
+
+                <section>
+                    <button class="border-[1px] cursor-pointer rounded-sm pl-[5px] pr-[5px]">Set Filters</button>
+                </section>
+            </div>
+
+            <!-- product images -->
             <section>
                 <h2>
             </section>
