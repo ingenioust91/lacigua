@@ -29,3 +29,7 @@ function hamburgerclose() {
 function dropdownsort () {
     document.getElementById("sort-list").style.visibility ="visible";
 }
+
+function filteropen () {
+    document.getElementById("filter-list").style.visibility ="visible";
+}

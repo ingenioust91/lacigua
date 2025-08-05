@@ -23,12 +23,12 @@
         </div>
 
         <div class="w-[80%] h-full flex items-center lg:justify-center">
-        <img src="asset/logo-lacigua-black.png" class="h-[75%] w-auto max-w-3xs" href="/index.html">
+        <img src="./asset/logo-lacigua-black.png" class="h-[75%] w-auto max-w-3xs" href="/index.html">
         </div>
 
         <div class="h-full w-[30%] flex items-center justify-end gap-[10px] lg:w-[10%]">
             <a href="#" class="text-sm cursor-pointer"><b>SIGN IN</b></a>
-            <img src="asset/cart.png" class="h-[50%] w-auto cursor-pointer">
+            <img src="./asset/cart.png" class="h-[50%] w-auto cursor-pointer">
         </div>    
     </nav>
 
@@ -72,7 +72,7 @@
 
     <main>
         <div class="flex w-full h-full pt-[20%] lg:pt-[7%] flex-col items-center justify-center gap-y-5 gap-x-5">
-            <img src="/asset/logo-ordinair-gray.png" class="w-[15%]">
+            <img src="./asset/logo-ordinair-gray.png" class="w-[15%]">
             
             <h1 class="text-2xl"><b>NEW ARRIVAL</b></h1>
 
@@ -90,51 +90,106 @@
                 </section>
 
                 <section>
-                    <button class="border-[1px] cursor-pointer rounded-sm pl-[5px] pr-[5px]">Set Filters</button>
+                    <button onclick="filteropen()" class="border-[1px] cursor-pointer rounded-sm pl-[5px] pr-[5px]">Set Filters</button>
                 </section>
+            </div>
+
+            <div id="filter-list" class="invisible flex flex-col h-full w-[60%] lg:w-[30%] right-0 top-0 bg-white fixed justify-center z-9999 p-[5%]">
+                <h3 class="pb-[5%]"><b>FILTERS</b></h3>
+                <h3>CATEGORIES</h3>
+
+                <section class="pb-[5%]">
+                    <h3><b>BRANDS</b></h3>
+                    <input type="checkbox" id="ordinair">
+                    <label for="ordinair">Ordinair</label><br>
+                    <input type="checkbox" id="aplomb">
+                    <label for="aplomb">Aplomb</label><br>
+                    <input type="checkbox" id="daneen">
+                    <label for="daneen">Daneen</label>         
+                </section>
+
+                <section class="pb-[5%]">
+                    <h3><b>CATEGORIES</b></h3>
+                    <input type="checkbox" id="tops">
+                    <label for="tops">Tops</label><br>
+                    <input type="checkbox" id="bottoms">
+                    <label for="bottoms">Bottom</label><br>
+                    <input type="checkbox" id="dress">
+                    <label for="dress">Dress</label><br>
+                    <input type="checkbox" id="outer">
+                    <label for="outer">Outer</label>  
+                </section>
+
+                <section class="pb-[5%]">
+                    <h3><b>COLOR</b></h3>
+                    <section class="flex flex-row gap-x-2 gap-y-2 flex-wrap">
+                        <div class="w-[80px] h-[25px] bg-blue-600 cursor-pointer"></div>
+                        <div class="w-[80px] h-[25px] bg-red-600 cursor-pointer"></div>
+                        <div class="w-[80px] h-[25px] bg-yellow-300 cursor-pointer"></div>
+                        <div class="w-[80px] h-[25px] bg-teal-500 cursor-pointer"></div>
+                        <div class="w-[80px] h-[25px] bg-rose-400 cursor-pointer"></div>
+                        <div class="w-[80px] h-[25px] bg-stone-600 cursor-pointer"></div>
+                        <div class="w-[80px] h-[25px] bg-black cursor-pointer"></div>
+                        <div class="w-[80px] h-[25px] bg-white border-1 cursor-pointer"></div>
+                    </section>
+                </section>
+
+                <section class="pb-[5%]">
+                    <h3><b>PRICE</b></h3>
+                    <div class="flex justify-between">
+                        <h4>IDR 0</h4>
+                        <h4>IDR 999,9999</h4>
+                    </div>
+                    <input type="range" min="1" max="999999" value="99000" class="w-full">
+                </section>
+                
+                <section class="pb-[5%]">
+                    <h3><b>SIZE</b></h3>
+                </section>
+
             </div>
             <!-- sort and filters -->
 
             <!-- product images -->
             <section class="flex w-[90%] gap-y-2 gap-x-2 flex-wrap justify-center">
                 <div class="flex w-[40%] lg:w-[30%] flex-col group relative">
-                    <img src="/asset/alia-1.jpg" >
-                    <img src="/asset/alia-4.jpg" class="absolute opacity-0 group-hover:opacity-100 transition duration-500">
+                    <img src="./asset/alia-1.jpg" >
+                    <img src="./asset/alia-4.jpg" class="absolute opacity-0 group-hover:opacity-100 transition duration-500">
                     <h3>Ordinair - Alia Shirt</h3>
                     <h3><b>IDR 199.900</b></h3>
                 </div>
 
                 <div class="flex w-[40%] lg:w-[30%] flex-col group relative">
-                    <img src="/asset/atelia-pants.jpg">
-                    <img src="/asset/atelia-pants-2.jpg" class="absolute opacity-0 group-hover:opacity-100 transition duration-500">
+                    <img src="./asset/atelia-pants.jpg">
+                    <img src="./asset/atelia-pants-2.jpg" class="absolute opacity-0 group-hover:opacity-100 transition duration-500">
                     <h3>Ordinair - Atelia Pants</h3>
                     <h3><b>IDR 199.900</b></h3>
                 </div>
 
                 <div class="flex w-[40%] lg:w-[30%] flex-col group relative">
-                    <img src="/asset/blazer.jpg">
-                    <img src="/asset/blazer-2.jpg" class="absolute opacity-0 group-hover:opacity-100 transition duration-500">
+                    <img src="./asset/blazer.jpg">
+                    <img src="./asset/blazer-2.jpg" class="absolute opacity-0 group-hover:opacity-100 transition duration-500">
                     <h3>Ordinair - Fay Blazer</h3>
                     <h3><b>IDR 199.900</b></h3>
                 </div>
 
                 <div class="flex w-[40%] lg:w-[30%] flex-col group relative">
-                    <img src="/asset/dress.jpg">
-                    <img src="/asset/dress-2.jpg" class="absolute opacity-0 group-hover:opacity-100 transition duration-500">
+                    <img src="./asset/dress.jpg">
+                    <img src="./asset/dress-2.jpg" class="absolute opacity-0 group-hover:opacity-100 transition duration-500">
                     <h3>Ordinair - Baby Dress</h3>
                     <h3><b>IDR 199.900</b></h3>
                 </div>
 
                 <div class="flex w-[40%] lg:w-[30%] flex-col group relative">
-                    <img src="/asset/kemeja.jpg">
-                    <img src="/asset/kemeja-2.jpg" class="absolute opacity-0 group-hover:opacity-100 transition duration-500">
+                    <img src="./asset/kemeja.jpg">
+                    <img src="./asset/kemeja-2.jpg" class="absolute opacity-0 group-hover:opacity-100 transition duration-500">
                     <h3>Ordinair - Lian Shirt</h3>
                     <h3><b>IDR 199.900</b></h3>
                 </div>
 
                 <div class="flex w-[40%] lg:w-[30%] flex-col group relative">
-                    <img src="/asset/kemeja2.jpg">
-                    <img src="/asset/kemeja2-2.jpg" class="absolute opacity-0 group-hover:opacity-100 transition duration-500">
+                    <img src="./asset/kemeja2.jpg">
+                    <img src="./asset/kemeja2-2.jpg" class="absolute opacity-0 group-hover:opacity-100 transition duration-500">
                     <h3>Ordinair - Bianca Shirt</h3>
                     <h3><b>IDR 199.900</b></h3>
                 </div>
