@@ -33,7 +33,7 @@
     </nav>
 
     <div id="menubar" class="w-full h-full bg-white fixed flex flex-col justify-start p-[10%] pt-[15%] gap-[10px]
-        lg:flex-row lg:h-[50%] lg:p-[5%] lg:pt-[7%] lg:justify-center">
+        lg:flex-row lg:h-[50%] lg:p-[5%] lg:pt-[8%] lg:justify-center">
         <i id="fa-close" class="fa fa-close text-right cursor-pointer" onclick="hamburgerclose()"></i>
         
         <form class="" action="">
@@ -71,13 +71,13 @@
     </div>
 
     <main>
-        <div class="flex w-full h-full pt-[20%] lg:pt-[7%] flex-col items-center justify-center gap-[5%]">
+        <div class="flex w-full h-full pt-[20%] lg:pt-[7%] flex-col items-center justify-center gap-y-5 gap-x-5">
             <img src="/asset/logo-ordinair-gray.png" class="w-[15%]">
             
             <h1 class="text-2xl"><b>NEW ARRIVAL</b></h1>
 
             <!-- sort and filters -->
-            <div class="w-full p-[2%] flex justify-between">
+            <div class="w-full pl-[2%] pr-[2%] flex justify-between">
                 <section class="w-[50%] flex justify-start gap-[5%]">
                     <h3>Sort by</h3>
                     <button onclick="dropdownsort()" class="cursor-pointer border-b-[1px]">Relevance &#129123</button>  
@@ -93,11 +93,58 @@
                     <button class="border-[1px] cursor-pointer rounded-sm pl-[5px] pr-[5px]">Set Filters</button>
                 </section>
             </div>
+            <!-- sort and filters -->
 
             <!-- product images -->
-            <section>
-                <h2>
+            <section class="flex w-[90%] gap-y-2 gap-x-2 flex-wrap justify-center">
+                <div class="flex w-[40%] lg:w-[30%] flex-col group relative">
+                    <img src="/asset/alia-1.jpg" >
+                    <img src="/asset/alia-4.jpg" class="absolute opacity-0 group-hover:opacity-100 transition duration-500">
+                    <h3>Ordinair - Alia Shirt</h3>
+                    <h3><b>IDR 199.900</b></h3>
+                </div>
+
+                <div class="flex w-[40%] lg:w-[30%] flex-col group relative">
+                    <img src="/asset/atelia-pants.jpg">
+                    <img src="/asset/atelia-pants-2.jpg" class="absolute opacity-0 group-hover:opacity-100 transition duration-500">
+                    <h3>Ordinair - Atelia Pants</h3>
+                    <h3><b>IDR 199.900</b></h3>
+                </div>
+
+                <div class="flex w-[40%] lg:w-[30%] flex-col group relative">
+                    <img src="/asset/blazer.jpg">
+                    <img src="/asset/blazer-2.jpg" class="absolute opacity-0 group-hover:opacity-100 transition duration-500">
+                    <h3>Ordinair - Fay Blazer</h3>
+                    <h3><b>IDR 199.900</b></h3>
+                </div>
+
+                <div class="flex w-[40%] lg:w-[30%] flex-col group relative">
+                    <img src="/asset/dress.jpg">
+                    <img src="/asset/dress-2.jpg" class="absolute opacity-0 group-hover:opacity-100 transition duration-500">
+                    <h3>Ordinair - Baby Dress</h3>
+                    <h3><b>IDR 199.900</b></h3>
+                </div>
+
+                <div class="flex w-[40%] lg:w-[30%] flex-col group relative">
+                    <img src="/asset/kemeja.jpg">
+                    <img src="/asset/kemeja-2.jpg" class="absolute opacity-0 group-hover:opacity-100 transition duration-500">
+                    <h3>Ordinair - Lian Shirt</h3>
+                    <h3><b>IDR 199.900</b></h3>
+                </div>
+
+                <div class="flex w-[40%] lg:w-[30%] flex-col group relative">
+                    <img src="/asset/kemeja2.jpg">
+                    <img src="/asset/kemeja2-2.jpg" class="absolute opacity-0 group-hover:opacity-100 transition duration-500">
+                    <h3>Ordinair - Bianca Shirt</h3>
+                    <h3><b>IDR 199.900</b></h3>
+                </div>
             </section>
+            <!-- product images -->
+
+            <div>
+                <h4>Pages 1 of 1</h4>
+            </div>
+
         </div>
     </main>
 </body>
