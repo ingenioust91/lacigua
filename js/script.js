@@ -18,8 +18,6 @@ function hamburgeropen() {
 
 }
 
-
-
 function hamburgerclose() {
     if (window.innerWidth >= 1024)
     {document.getElementById("menubar").style.transform = "translateY(-100%)"}
@@ -32,4 +30,10 @@ function dropdownsort () {
 
 function filteropen () {
     document.getElementById("filter-list").style.visibility ="visible";
+    document.body.style.overflow = "hidden";
+}
+
+function filterclose () {
+    document.getElementById("filter-list").style.visibility ="hidden";
+    document.body.style.overflow = "auto";
 }
