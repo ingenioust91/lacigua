@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Lacigua</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <nav class="w-full h-[7%] flex items-center flex-auto p-[2%] fixed lg:h-[15%] z-9999 fixed bg-white">
+        <div class="w-[10%] h-full flex items-center" >
+            <a class="text-3xl cursor-pointer" onclick="hamburgeropen()">&#9776;</a>
+        </div>
+
+        <a class="w-[80%] h-full flex items-center lg:justify-center" href="index.html">
+            <img src="./asset/logo-lacigua-black.png" class="h-[75%] w-auto max-w-3xs cursor-pointer">
+        </a>
+
+        <div class="h-full w-[30%] flex items-center justify-end gap-[10px] lg:w-[10%]">
+            <a href="#" class="text-sm cursor-pointer"><b>SIGN IN</b></a>
+            <img src="./asset/cart.png" class="h-[50%] w-auto cursor-pointer">
+        </div>    
+    </nav>
+
+    <div id="menubar" class="w-full h-full bg-white fixed flex flex-col justify-start p-[10%] pt-[15%] gap-[10px]
+        lg:flex-row lg:h-[50%] lg:p-[5%] lg:pt-[8%] lg:justify-center z-9998">
+        <i id="fa-close" class="fa fa-close text-right cursor-pointer" onclick="hamburgerclose()"></i>
+        
+        <form class="" action="">
+            <button type="submit"><i class="fa fa-search"></i></button>
+            <input type="text" placeholder="Search" name="search" class="border-1 rounded-full w-[90%]">
+        </form>
+
+        <hr>
+        <h2><b>ORDINAIR</b></h2>
+        <ul id="ordinair" class="pl-[5%] lg:pl-0 lg:w-[10%]">
+            <li><a href="allitems.html">All Items</a></li>
+            <li><a href="#">Tops</a></li>
+            <li><a href="#">Bottom</a></li>
+            <li><a href="#">Dress</a></li>
+        </ul>
+
+        <hr>
+        <h2><b>APLOMB</b></h2>
+        <ul id="aplomb" class="pl-[5%] lg:pl-0 lg:w-[10%]">
+            <li><a href="#">All Items</a></li>
+            <li><a href="#">Tops</a></li>
+            <li><a href="#">Bottom</a></li>
+            <li><a href="#">Dress</a></li>
+        </ul>
+
+        <hr>
+        <h2><b>DANEEN</b></h2>
+        <ul id="daneen" class="pl-[5%] lg:pl-0 lg:w-[10%]">
+            <li><a href="#">All Items</a></li>
+            <li><a href="#">Tops</a></li>
+            <li><a href="#">Bottom</a></li>
+            <li><a href="#">Dress</a></li>
+        </ul>
+
+    </div>
+    
+    <section class="grid grid-rows-4 grid-cols-[15%_35%_50%] w-full h-full pt-[15%] lg:pt-[8%]">
+        <a>
+            <img src="/asset/alia-1.jpg">
+        </a>
+
+        <a>
+            <img src="/asset/alia-2.jpg">
+        </a>
+
+        <a>
+            <img src="/asset/alia-3.jpg">
+        </a>
+
+        <a>
+            <img src="/asset/alia-4.jpg">
+        </a>
+
+    </section>
+
+</body>
+</html>
