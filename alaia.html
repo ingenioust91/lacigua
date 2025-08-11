@@ -70,22 +70,45 @@
 
     </div>
     
-    <section class="grid grid-rows-4 grid-cols-[15%_35%_50%] w-full h-full pt-[15%] lg:pt-[8%]">
-        <a>
-            <img src="/asset/alia-1.jpg">
-        </a>
+    <section class="flex flex-col lg:flex-row w-full pt-[20%] lg:pt-[8%] p-[5%] mx-auto">
+        <aside class="w-[10%] hidden lg:block">
+            <div class="flex flex-col w-[70%] mx-auto gap-[10px]">
+            <a class="productthumbnail cursor-pointer" onclick="thumbnail(1)"><img src="/asset/alia-1.jpg"></a>
+            <a class="productthumbnail cursor-pointer" onclick="thumbnail(2)"><img src="/asset/alia-2.jpg"></a>
+            <a class="productthumbnail cursor-pointer" onclick="thumbnail(3)"><img src="/asset/alia-3.jpg"></a>
+            <a class="productthumbnail cursor-pointer" onclick="thumbnail(4)"><img src="/asset/alia-4.jpg"></a>
+            </div>
+        </aside>
 
-        <a>
-            <img src="/asset/alia-2.jpg">
-        </a>
+        <!-- product container -->
+        <section class="lg:w-[40%] relative">
+            <a class="productslide hidden"><img src="/asset/alia-1.jpg"></a>
+            <a class="productslide hidden"><img src="/asset/alia-2.jpg"></a>
+            <a class="productslide hidden"><img src="/asset/alia-3.jpg"></a>
+            <a class="productslide hidden"><img src="/asset/alia-4.jpg"></a>
 
-        <a>
-            <img src="/asset/alia-3.jpg">
-        </a>
+            <a class="text-3xl absolute top-[50%] cursor-pointer p-[10px] bg-black opacity-20 text-white" onclick="addslides(-1)">❮</a>
+            <a class="text-3xl absolute top-[50%] right-0 cursor-pointer p-[10px] bg-black opacity-20 text-white" onclick="addslides(1)">❯</a>
+        </section>
 
-        <a>
-            <img src="/asset/alia-4.jpg">
-        </a>
+        <!-- product detail -->
+        <section class="flex flex-col gap-[5px] lg:gap-[30px] lg:w-[50%] p-[5%]">
+            <div>
+                <h1 class="text-xl">Ordinair</h1>
+                <h2 class="text-3xl"><b>Alia Short Sleeve Shirt Navy Blue</b></h2>
+                <h3 class="text-3xl">IDR 199.900</h3>
+            </div>
+
+            <div>
+                <h3>Size:</h3>
+                <button class="border-1 h-[50px] w-[50px]">SM</button>
+                <button class="border-1 h-[50px] w-[50px]">ML</button>
+            </div>
+
+            <h4 class="underline">Size Guide</h4>
+
+            <button class="w-full h-[50px] bg-black text-white text-xl">Add to Cart</button>
+        </section>
 
     </section>
 
