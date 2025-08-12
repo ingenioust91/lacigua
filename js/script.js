@@ -30,10 +30,15 @@ function filteropen () {
     document.body.style.overflow = "hidden";
 }
 
-function filterclose () {
+function filterclose() {
     document.getElementById("filter-list").style.visibility ="hidden";
     document.body.style.overflow = "auto";
 }
+
+function selectsize(n) {
+    console.log(n);
+}
+
 
 var slideindex = 1;
 showslide(slideindex);

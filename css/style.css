@@ -13,6 +13,16 @@
         transition: transform 0.5s ease;
     }
 
+    .fade {
+        animation-name: fadeimage;
+        animation-duration: 1s;
+    }
+
+    @keyframes fadeimage {
+        from {opacity: 0.5;}
+        to {opacity: 1;}
+    }
+
     @media only screen and (min-width: 1024px) {
     #menubar {
         transform: translateY(-100%);
